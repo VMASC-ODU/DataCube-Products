@@ -1,0 +1,46 @@
+name: noaa_c_cap
+description: C-CAP Regional Land Cover and Change
+metadata_type: eo3
+
+metadata:
+  product:
+    name: noaa_c_cap
+
+
+measurements:
+  - name: "data"
+    aliases: [classification]
+    units: "1"
+    dtype: uint8
+    nodata:  ### Don't know, not on planetary computer
+    flags_definition:
+      data:
+        bits: [0, 1, 2, 3, 4, 5, 6, 7] ## Is this right?
+        description: C-CAP class
+        values:
+          0: Background
+          1: Unclassified (Cloud, Shadow, etc)
+          2: High Intensity Developed
+          3: Medium Intensity Developed
+          4: Low Intensity Developed
+          5: Developed Open Space
+          6: Cultivated Crops
+          7: Pasture/Hay
+          8: Grassland/Herbaceous
+          9: Deciduous Forest
+          10: Evergreen Forest
+          11: Mixed Forest
+          12: Scrub/Shrub
+          13: Palustrine Forested Wetland
+          14: Palustrine Scrub/Shrub Wetland
+          15: Palustrine Emergent Wetland (Persistent)
+          16: Estuarine Forested Wetland
+          17: Estuarine Scrub/Shrub Wetland
+          18: Estuarine Emergent Wetland
+          19: Unconsolidated Shore
+          20: Bare Land
+          21: Open Water
+          22: Palustrine Aquatic Bed
+          23: Estuarine Aquatic Bed
+          24: Tundra
+          25: Perennial Ice/Snow

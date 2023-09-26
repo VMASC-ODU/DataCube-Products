@@ -1,0 +1,26 @@
+name: chesapeake_lc_7
+description: Chesapeake Land Cover (7-class)
+metadata_type: eo3
+
+metadata:
+  product:
+    name: chesapeake_lc_7
+
+measurements:
+  - name: "data"
+    aliases: [classification]
+    units: "1"
+    dtype: uint8
+    nodata: 15
+    flags_definition:
+      data:
+        bits: [0, 1, 2, 3, 4, 5, 6, 7]
+        description: Land Use class
+        values:
+          1: Water
+          2: Tree Canpoy adn Shrubs
+          3: Low Vegetation
+          4: Barren
+          5: Impervious Surfaces
+          6: Impervious Roads
+          7: Aberdeen Proving Ground

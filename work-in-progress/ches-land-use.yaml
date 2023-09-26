@@ -1,0 +1,42 @@
+name: chesapeake_lu
+description: Chesapeake Land Use Classification
+metadata_type: eo3
+
+metadata:
+  product:
+    name: chesapeake_lu
+
+storage:
+  crs: EPSG:4326
+  resolution:
+    longitude: 0.0002777777777777778
+    latitude: -0.0002777777777777778
+
+measurements:
+  - name: "data"
+    aliases: [classification]
+    units: "1"
+    dtype: uint8
+    nodata: 0
+    flags_definition:
+      data:
+        bits: [0, 1, 2, 3, 4, 5, 6, 7]
+        description: Land Use class
+        values:
+          1: Impervious Roads
+          2: Impervious Non-Roads
+          3: Tree Canopy over Impervious Surfaces
+          4: Water
+          5: Tidal Wetlands
+          6: Floodplain Wetlands
+          7: Other Wetlands
+          8: Forest
+          9: Tree Canopy over Turf Grass
+          10: Mixed Open
+          11: Fractional Turf (small)
+          12: Fractional Turf (medium)
+          13: Fractional Turf (large)
+          14: Fractional Impervious
+          15: Turf Grass
+          16: Cropland
+          17: Pasture/Hay
