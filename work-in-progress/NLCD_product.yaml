@@ -1,0 +1,45 @@
+name: usgs_nlcd
+description: Land Use from National Land Cover Database 
+metadata_type: collection
+
+metadata:
+  product:
+    name: usgs_nlcd
+
+#TODO:update this
+storage:
+  crs: EPSG:6350
+  resolution:
+    longitude: 0.00008333333333333333
+    latitude: -0.00008333333333333333
+    
+measurements:
+  - name: "classification"
+    units: "1"
+    dtype: uint8
+    nodata: 0
+    flags_definition:
+      data:
+        bits: [0, 1, 2, 3, 4, 5, 6, 7]
+        description: Land Use/Land Cover class
+        values:
+          11: Open Water
+          12: Perennial Ice/Snow
+          21: Developed, Open Space
+          22: Developed, Low Intensity
+          23: Developed, Medium Intensity
+          24: Developed, High Intensity
+          31: Barren Land (Rock/Sand/Clay)
+          41: Deciduous Forest
+          42: Evergreen Forest
+          43: Mixed Forest
+          51: Dwarf Scrub (Alaska)
+          52: Shrub/Scrub
+          71: Grassland/Herbaceous
+          72: Sedge/Herbaceous (Alaska)
+          73: Lichens (Alaska)
+          74: Moss (Alaska)
+          81: Pasture/Hay
+          82: Cultivated Crops
+          90: Woody Wetlands
+          95: Emergent Herbaceous Wetlands
