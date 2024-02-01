@@ -1,6 +1,6 @@
 name: usgs_nlcd
 description: Land Use from National Land Cover Database 
-metadata_type: collection
+metadata_type: eo3
 
 metadata:
   product:
