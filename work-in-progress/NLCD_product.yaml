@@ -5,13 +5,15 @@ metadata_type: eo3
 metadata:
   product:
     name: usgs_nlcd
+  format:
+    name: GeoTiff
 
 #TODO:update this
 storage:
   crs: EPSG:6350
   resolution:
-    longitude: 0.00008333333333333333
-    latitude: -0.00008333333333333333
+    x: 30
+    y: -30
     
 measurements:
   - name: "classification"
