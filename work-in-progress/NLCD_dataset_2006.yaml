@@ -7,29 +7,29 @@ product:
   href: "https://raw.githubusercontent.com/VMASC-ODU/DataCube-Products/main/work-in-progress/NLCD_product.yaml"
   #href: "file://home/jupyter-bfeld001/NLCD_product.yaml"
 
-location: "file://srv/nlcd_data/2006.tif"
+location: "file:///srv/nlcd_data/2006.tif"
 
 crs: "epsg:6350"
-geometry:
-  type: "Polygon"
+#geometry:
+  #type: "Polygon"
   #format confilcts [,,,] or : - - -
-  coordinates: [
-            [[-2493045.000, 3310005.000], [-2493045.000, 177285.000], [2342655.000, 3310005.000], [2342655.000, 177285.000], [-2493045.000, 3310005.000]]]
+  #coordinates: [
+#            [[-2493045.000, 3310005.000], [-2493045.000, 177285.000], [2342655.000, 3310005.000], [2342655.000, 177285.000], [-2493045.000, 3310005.000]]]
 
 grids:
   default:
-    shape: [161190, 104424]
-    transform: [30, 0.0, 0.0, 0.0, -30, 0.0]
+    shape: [104424, 161190]
+    transform: [30, 0.0, -2493060.00, 0.0, -30, 3310020.00]
 
-# properties:
-#  datetime: "2006-10-07T12:00:00Z"
-#  odc:processing_datetime: "2023-10-07T14:00:00Z"
-#  dea:dataset_maturity: "final"
+properties:
+ datetime: "2006-10-07T12:00:00Z"
+ odc:processing_datetime: "2023-10-07T14:00:00Z"
+ dea:dataset_maturity: "final"
 
 measurements:
   classification:
     path: "2006.tif"
-    band: "Band 1"
+    band: 1
     layer: "Layer_1"
 
 #not used in this dataset  
