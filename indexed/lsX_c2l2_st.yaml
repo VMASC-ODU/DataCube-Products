@@ -10,6 +10,12 @@ metadata:
     name: ls9_c2l2_st
 
 measurements:
+  - name: lwir11
+    dtype: "uint16"
+    units: "Kelvin"
+    nodata: 0
+    aliases: [lwir, band_6, st, surface_temperature]
+    
   - name: TRAD
     dtype: "int16"
     units: "W/(m2.sr.μm)"
@@ -51,6 +57,12 @@ measurements:
     units: "Kilometers"
     nodata: -9999
     aliases: [cdist, ST_CDIST, cloud_distance]
+
+  - name: qa
+    dtype: "int16"
+    units: "Kelvin"
+    nodata: -9999
+    aliases: [st_qa, surface_temperature_quality]
 
   - name: qa_pixel
     dtype: "uint16"
@@ -216,6 +228,12 @@ metadata:
     name: ls8_c2l2_st
 
 measurements:
+  - name: lwir11
+    dtype: "uint16"
+    units: "Kelvin"
+    nodata: 0
+    aliases: [lwir, band_6, st, surface_temperature]
+
   - name: TRAD
     dtype: "int16"
     units: "W/(m2.sr.μm)"
@@ -257,6 +275,12 @@ measurements:
     units: "Kilometers"
     nodata: -9999
     aliases: [cdist, ST_CDIST, cloud_distance]
+    
+  - name: qa
+    dtype: "int16"
+    units: "Kelvin"
+    nodata: -9999
+    aliases: [st_qa, surface_temperature_quality]
 
   - name: qa_pixel
     dtype: "uint16"
@@ -422,6 +446,12 @@ metadata:
     name: ls7_c2l2_st
 
 measurements:
+  - name: lwir11
+    dtype: "uint16"
+    units: "Kelvin"
+    nodata: 0
+    aliases: [lwir,band_6, st, surface_temperature]
+    
   - name: TRAD
     dtype: "int16"
     units: "W/(m2.sr.μm)"
@@ -463,6 +493,12 @@ measurements:
     units: "Kilometers"
     nodata: -9999
     aliases: [cdist, ST_CDIST, cloud_distance]
+    
+  - name: qa
+    dtype: "int16"
+    units: "Kelvin"
+    nodata: -9999
+    aliases: [st_qa, surface_temperature_quality]
 
   - name: qa_pixel
     dtype: "uint16"
@@ -631,6 +667,12 @@ metadata:
     name: ls5_c2l2_st
 
 measurements:
+  - name: lwir
+    dtype: "uint16"
+    units: "Kelvin"
+    nodata: 0
+    aliases: [lwir, band_6, st, surface_temperature]
+    
   - name: TRAD
     dtype: "int16"
     units: "W/(m2.sr.μm)"
@@ -672,6 +714,12 @@ measurements:
     units: "Kilometers"
     nodata: -9999
     aliases: [cdist, ST_CDIST, cloud_distance]
+    
+  - name: qa
+    dtype: "int16"
+    units: "Kelvin"
+    nodata: -9999
+    aliases: [st_qa, surface_temperature_quality]
 
   - name: qa_pixel
     dtype: "uint16"

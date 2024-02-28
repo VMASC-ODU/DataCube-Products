@@ -1,0 +1,46 @@
+$schema: "https://schemas.opendatacube.org/dataset"
+id: d5703fd6-cb60-11ee-a0d3-325096b39f47  #should be unique
+label: "NLCD_2006"
+#need to double check pathing
+product:
+  name: "usgs_nlcd"
+  href: "https://raw.githubusercontent.com/VMASC-ODU/DataCube-Products/main/indexed/NLCD_product.yaml"
+  #href: "file://home/jupyter-bfeld001/NLCD_product.yaml"
+
+location: "file:///srv/nlcd_data/2006.tif"
+
+crs: "epsg:6350"
+#geometry:
+  #type: "Polygon"
+  #format confilcts [,,,] or : - - -
+  #coordinates: [
+#            [[-2493045.000, 3310005.000], [-2493045.000, 177285.000], [2342655.000, 3310005.000], [2342655.000, 177285.000], [-2493045.000, 3310005.000]]]
+
+grids:
+  default:
+    shape: [104424, 161190]
+    transform: [30, 0.0, -2493060.00, 0.0, -30, 3310020.00]
+
+properties:
+ datetime: "2006-10-07T12:00:00Z"
+ odc:processing_datetime: "2023-10-07T14:00:00Z"
+ dea:dataset_maturity: "final"
+
+measurements:
+  classification:
+    path: "2006.tif"
+    band: 1
+    layer: "Layer_1"
+
+#not used in this dataset  
+#accessories:
+#  accessory1:
+#    path: "path/to/accessory1"
+#    type: "metadata"
+#not used in this dataset  
+#lineage:
+#  processing_steps:
+#    - name: "step1"
+#      description: "Description of step 1"
+#    - name: "step2"
+#      description: "Description of step 2"

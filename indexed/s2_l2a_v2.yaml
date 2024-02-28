@@ -80,4 +80,26 @@ measurements:
     units: "1"
     dtype: uint16
     nodata: 0
-       
+
+  - name: "scl"
+    aliases: [mask, qa]
+    units: "1"
+    dtype: uint8
+    nodata: 0
+    flags_definition:
+      qa:
+        bits: [0, 1, 2, 3, 4, 5, 6, 7]
+        description: Sen2Cor Scene Classification
+        values:
+          0: no data
+          1: saturated or defective
+          2: dark area pixels
+          3: cloud shadows
+          4: vegetation
+          5: bare soils
+          6: water
+          7: unclassified
+          8: cloud medium probability
+          9: cloud high probability
+          10: thin cirrus
+          11: snow or ice
