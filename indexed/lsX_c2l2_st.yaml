@@ -446,7 +446,7 @@ metadata:
     name: ls7_c2l2_st
 
 measurements:
-  - name: lwir11
+  - name: lwir
     dtype: "uint16"
     units: "Kelvin"
     nodata: 0
