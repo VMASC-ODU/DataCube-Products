@@ -1,0 +1,30 @@
+$schema: "https://schemas.opendatacube.org/dataset"
+id: 8c900e5c-b7f6-56e3-a126-1735dc9bd175  #should be unique
+label: "NLCD_Imperviousness_2021"
+#need to double check pathing
+product:
+  name: "usgs_nlcd_imp"
+  #href: "https://raw.githubusercontent.com/VMASC-ODU/DataCube-Products/main/indexed/NLCD_product.yaml"
+  href: "file://home/jupyter-bfeld001/NLCD_Urban_Imperv_Product.yaml"
+
+location: "file:///srv/nlcd_data/nlcd_imperv_2021.tif"
+
+crs: "epsg:6350"
+
+grids:
+  default:
+    shape: [104424, 161190]
+    transform: [30, 0.0, -2493060.00, 0.0, -30, 3310020.00]
+
+properties:
+ datetime: "2021-10-07T12:00:00Z"
+ odc:processing_datetime: "2023-02-28T14:00:00Z"
+ dea:dataset_maturity: "final"
+
+measurements:
+  Value:
+    path: "nlcd_imperv_2021.tif"
+    band: 1
+    layer: "Layer_1"
+
+

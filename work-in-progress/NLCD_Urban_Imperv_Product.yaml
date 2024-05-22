@@ -1,0 +1,19 @@
+name: usgs_nlcd_imp
+description: NLCD imperviousness products represent urban impervious surfaces as a percentage of developed surface over every 30-meter pixel in the United States. 
+metadata_type: eo3
+
+metadata:
+  product:
+    name: usgs_nlcd_imp
+
+storage:
+  crs: EPSG:6350
+  resolution:
+    x: 30
+    y: -30
+    
+measurements:
+  - name: "Value"
+    units: "1"
+    dtype: uint8
+    nodata: 0

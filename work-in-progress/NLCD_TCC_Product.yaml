@@ -1,0 +1,19 @@
+name: usgs_nlcd_tcc
+description: NLCD tree canopy cover geospatial datasets with spatial resolutions of 30 m are produced by the USDA Forest Service. Tree canopy cover is derived from multi-spectral satellite imagery and other available ground and ancillary information. 
+metadata_type: eo3
+
+metadata:
+  product:
+    name: usgs_nlcd_tcc
+
+storage:
+  crs: EPSG:6350
+  resolution:
+    x: 30
+    y: -30
+    
+measurements:
+  - name: "Value"
+    units: "1"
+    dtype: uint8
+    nodata: 0
