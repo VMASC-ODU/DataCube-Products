@@ -1,0 +1,28 @@
+$schema: "https://schemas.opendatacube.org/dataset"
+id: e1e868fc-6bc3-54f0-b1f5-a6730a02b2f4
+label: "NLCD_IMP_2019"
+
+product:
+  name: "usgs_nlcd_imp"
+  href: "https://raw.githubusercontent.com/VMASC-ODU/DataCube-Products/main/indexed/NLCD_TCC_Product.yaml"
+
+location: "s3://vmasc-va-datacube-data/nlcd_data/impervious/nlcd_2019_impervious.tif"
+
+crs: "epsg:6350"
+
+grids:
+  default:
+    shape: [104424, 161190]
+    transform: [30, 0.0, -2493060.00, 0.0, -30, 3310020.00]
+
+properties:
+ datetime: "2019-12-30T12:00:00Z"
+ odc:processing_datetime: "2024-08-14T14:00:00Z"
+ dea:dataset_maturity: "final"
+
+measurements:
+  Value:
+    path: "nlcd_2019_impervious.tif"
+    band: 1
+    layer: "Layer_1"
+

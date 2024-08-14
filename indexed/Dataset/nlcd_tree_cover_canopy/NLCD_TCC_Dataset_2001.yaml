@@ -1,0 +1,28 @@
+$schema: "https://schemas.opendatacube.org/dataset"
+id: 8186cc16-98fb-5a1a-8aaa-1315ef308fa5
+label: "NLCD_TCC_2001"
+
+product:
+  name: "usgs_nlcd_tcc"
+  href: "https://raw.githubusercontent.com/VMASC-ODU/DataCube-Products/main/indexed/NLCD_TCC_Product.yaml"
+
+location: "s3://vmasc-va-datacube-data/nlcd_data/tree_cover_canopy/nlcd_tcc_conus_2001_v2021-4.tif"
+
+crs: "epsg:6350"
+
+grids:
+  default:
+    shape: [104424, 161190]
+    transform: [30, 0.0, -2493060.00, 0.0, -30, 3310020.00]
+
+properties:
+ datetime: "2001-12-30T12:00:00Z"
+ odc:processing_datetime: "2024-08-14T14:00:00Z"
+ dea:dataset_maturity: "final"
+
+measurements:
+  Value:
+    path: "nlcd_tcc_conus_2001_v2021-4.tif"
+    band: 1
+    layer: "Layer_1"
+

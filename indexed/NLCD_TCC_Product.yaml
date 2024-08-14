@@ -5,7 +5,7 @@ metadata_type: eo3
 metadata:
   product:
     name: usgs_nlcd_tcc
-
+    
 storage:
   crs: EPSG:6350
   resolution:
