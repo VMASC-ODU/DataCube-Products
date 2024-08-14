@@ -6,7 +6,6 @@ metadata:
   product:
     name: usgs_nlcd
 
-#TODO:update this
 storage:
   crs: EPSG:6350
   resolution:
